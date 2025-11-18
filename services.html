@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Wellness Hospitals & Diagnostics — Affordable Care</title>
+  <meta name="description" content="Wellness Hospitals and Diagnostics Limited — Affordable Care. Family health, pediatrics, obstetrics, gynecology, surgery, scans, ECG and laboratory services." />
+  <script src="https://kit.fontawesome.com/346f40ffbc.js" crossorigin="anonymous"></script>
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0ea5e9', // sky-500
+            tealg: '#14b8a6',   // teal-500
+            accent: '#059669'   // green-600
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased leading-relaxed">
+    <!-- Header / Nav -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white font-extrabold">W</div>
+                <div>
+                    <div class="text-lg font-extrabold">Wellness Hospitals</div>
+                    <div class="text-xs text-slate-500">Diagnostics Limited — Affordable Care</div>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-6">
+            <a href="#services" class="hover:text-primary">Services</a>
+            <a href="#about" class="hover:text-primary">About</a>
+            <a href="#booking" class="hover:text-primary">Booking</a>
+            <a href="#contact" class="hover:text-primary">Contact</a>
+            <button id="ctaBook" class="ml-4 bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Book Appointment</button>
+            </nav>
+
+            <div class="md:hidden">
+                <button id="mobileToggle" class="p-2 rounded-md border">
+                    <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-t">
+            <div class="px-4 py-4 flex flex-col gap-3">
+                <a href="#services" class="block">Services</a>
+                <a href="#about" class="block">About</a>
+                <a href="#booking" class="block">Booking</a>
+                <a href="#contact" class="block">Contact</a>
+                <button id="mobileBook" class="mt-2 bg-primary text-white px-4 py-2 rounded-lg">Book Appointment</button>
+            </div>
+        </div>
+    </header>
+  
+    <main>
+        <!-- Hero -->
+        <section class="pt-24 pb-12 bg-gradient-to-br from-primary to-emerald-100">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-700 text-shadow-2xs text-shadow-gray-100 mb-6">
+                    Our Services
+                </h1>
+                <p class="text-lg text-slate-700 max-w-2xl mx-auto mb-8">
+                    List of services we offer at Wellness Hospital & Diagnostics
+                </p>
+            </div>
+        </section>
+        <!-- Services Page -->
+        <section id="services" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card Template -->
+                    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <div class="flex flex-row items-center gap-4 mb-6">
+                            <span class="bg-sky-100 flex h-12 w-12 justify-center items-center rounded-xl"><i class="fa-solid fa-people-group text-2xl text-teal-500"></i></span>
+                            <h2 class="text-2xl font-semibold text-slate-800 mb-3">Family Health</h2>
+                        </div>
+                        <p class="text-slate-600 text-md mb-4">General consultation, routine checkups, preventive health care for families.</p>
+
+                        <ul class="space-y-1 text-slate-700 text-lg">
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                        </ul>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <div class="flex flex-row items-center gap-4 mb-6">
+                            <span class="bg-sky-100 flex h-12 w-12 justify-center items-center rounded-xl"><i class="fa-solid fa-child-reaching text-2xl text-yellow-500"></i></span>
+                            <h2 class="text-2xl font-semibold text-slate-800 mb-3">Child Health</h2>
+                        </div>
+                        <p class="text-slate-600 text-md mb-4">Immunizations, growth monitoring, pediatric consultations.</p>
+
+                        <ul class="space-y-1 text-slate-700 text-lg">
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                        </ul>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <div class="flex flex-row items-center gap-4 mb-6">
+                            <span class="bg-sky-100 flex h-12 w-12 justify-center items-center rounded-xl"><i class="fa-solid fa-person-pregnant text-2xl text-orange-700"></i></span>
+                            <h2 class="text-2xl font-semibold text-slate-800 mb-3">Obstetrics</h2>
+                        </div>
+                        <p class="text-slate-600 text-md mb-4">Antenatal care, prenatal screening, delivery support.</p>
+
+                        <ul class="space-y-1 text-slate-700 text-lg">
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Preventive Care</li>
+                        </ul>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <div class="flex flex-row items-center gap-4 mb-6">
+                            <span class="bg-sky-100 flex h-12 w-12 justify-center items-center rounded-xl"><i class="fa-solid fa-venus text-2xl text-primary"></i></span>
+                            <h2 class="text-2xl font-semibold text-slate-800 mb-3">Gynecology</h2>
+                        </div>
+                        <p class="text-slate-600 text-md mb-4">Women’s health, screenings, reproductive care.</p>
+
+                        <ul class="space-y-1 text-slate-700 text-lg">
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Prenatal care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Antenatal Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Delivery</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Scan</li>
+                        </ul>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <div class="flex flex-row items-center gap-4 mb-6">
+                            <span class="bg-sky-100 flex h-12 w-12 justify-center items-center rounded-xl"><i class="fa-solid fa-user-doctor text-2xl text-rose-500"></i></span>
+                            <h2 class="text-2xl font-semibold text-slate-800 mb-3">Surgery / Trauma</h2>
+                        </div>
+                        <p class="text-slate-600 text-md mb-4">Minor procedures, emergency wound care, post-op support.</p>
+
+                        <ul class="space-y-1 text-slate-700 text-lg">
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Prenatal care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Antenatal Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Delivery</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Scan</li>
+                        </ul>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <div class="flex flex-row items-center gap-4 mb-6">
+                            <span class="bg-sky-100 flex h-12 w-12 justify-center items-center rounded-xl"><i class="fa-solid fa-heart-pulse text-2xl text-red-400"></i></span>
+                            <h2 class="text-2xl font-semibold text-slate-800 mb-3">ECG Lab</h2>
+                        </div>
+                        <p class="text-slate-600 text-md mb-4">Accurate ECG testing and heart monitoring services.</p>
+
+                        <ul class="space-y-1 text-slate-700 text-lg">
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Prenatal care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Antenatal Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Delivery</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Scan</li>
+                        </ul>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <div class="flex flex-row items-center gap-4 mb-6">
+                            <span class="bg-sky-100 flex h-12 w-12 justify-center items-center rounded-xl"><i class="fa-solid fa-flask-vial text-2xl text-green-500"></i></span>
+                            <h2 class="text-2xl font-semibold text-slate-800 mb-3">Medical Laboratory</h2>
+                        </div>
+                        <p class="text-slate-600 text-md mb-4">Blood tests, screening panels and diagnostic reporting.</p>
+
+                        <ul class="space-y-1 text-slate-700 text-lg">
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Prenatal care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Antenatal Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Delivery</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Scan</li>
+                        </ul>
+                    </article>
+
+                    <article class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                        <div class="flex flex-row items-center gap-4 mb-6">
+                            <span class="bg-sky-100 flex h-12 w-12 justify-center items-center rounded-xl"><i class="fa-solid fa-laptop-medical text-2xl text-orange-700"></i></span>
+                            <h2 class="text-2xl font-semibold text-slate-800 mb-3">Medical Scan</h2>
+                        </div>
+                        <p class="text-slate-600 text-md mb-4">Ultrasound and imaging services with experienced technicians.</p>
+
+                        <ul class="space-y-1 text-slate-700 text-lg">
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Prenatal care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Antenatal Care</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Delivery</li>
+                            <li><i class="fa-solid fa-check text-primary mr-1"></i> Scan</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sky-300/10 py-12 px-16">
+            <div class="container flex flex-col lg:flex-row mx-auto border shadow-lg bg-white rounded-lg p-10">
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-4xl font-semibold">Ready to Schedule an Appointment?</h3>
+                    <p class="mt-2 mb-2 text-lg">Our staffs are here to attend to your needs and give you the best healthcare services.</p>
+
+                    <div class="flex flex-col lg:flex-row gap-4 mt-4">
+                        <a href="/contact.html" class="bg-tealg py-3 px-6 border rounded-lg text-white text-lg font-semibold transition duration-100 hover:bg-teal-600 hover:text-white">Contact Us</a>
+
+                        <a href="tel:+2348086892620" class="bg-transparent py-3 px-6 border rounded-lg text-gray-500 font-semibold transition duration-100 hover:bg-gray-200"><i class="fa-solid fa-phone text-accent mr-2"></i> 08086892620</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/wellness-customer.png" alt="Wellness Hospitals appointment" class="mt-8 lg:mt-0 lg:ml-10 rounded-2xl w-full max-w-md">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-10">
+        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white font-extrabold">W</div>
+                <div>
+                    <div class="font-bold">Wellness Hospitals</div>
+                    <div class="text-md text-slate-300">Affordable Care</div>
+                </div>
+                </div>
+
+                <p class="mt-4 text-slate-100 text-md max-w-sm">Community-first healthcare with modern diagnostics and compassionate clinicians. Contact us for appointments and inquiries.</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-2xl mb-5">Quick Links</h4>
+                <ul class="mt-4 space-y-3 text-md text-slate-300">
+                    <li><a href="#services" class="hover:text-primary"><i class="fa-solid fa-angle-right mr-3"></i> Services</a></li>
+                    <li><a href="#about" class="hover:text-primary"><i class="fa-solid fa-angle-right mr-3"></i> About</a></li>
+                    <li><a href="#booking" class="hover:text-primary"><i class="fa-solid fa-angle-right mr-3"></i> Booking</a></li>
+                    <li><a href="#contact" class="hover:text-primary"><i class="fa-solid fa-angle-right mr-3"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-2xl mb-5">Our Services</h4>
+                <ul class="mt-4 space-y-3 text-md text-slate-300">
+                    <li href="#services" class="hover:text-white"><i class="fa-solid fa-check text-primary mr-1"></i> Family Health</li>
+                    <li href="#about" class="hover:text-white"><i class="fa-solid fa-check text-primary mr-1"></i> Child Health</li>
+                    <li href="#booking" class="hover:text-white"><i class="fa-solid fa-check text-primary mr-1"></i> Obstetrics & Gynecology<li>
+                    <li href="#contact" class="hover:text-white"><i class="fa-solid fa-check text-primary mr-1"></i> Surgery & Trauma</li>
+                    <li href="#contact" class="hover:text-white"><i class="fa-solid fa-check text-primary mr-1"></i> Medical Diagnostics</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-2xl mb-5">Contact Us</h4>
+                <div class="flex flex-col gap-4 text-slate-300 text-md">
+                    <div class="flex flex-row">
+                        <span class=""><i class="fa-solid fa-location-dot text-primary mr-3 text-xl"></i></span> <span>317 Old Refinery Road, adjacent Chicken Republic, Elelenwo, Elelenwa 501101, Rivers</span>
+                    </div>
+                    <div class="flex flex-row">
+                        <span class=""><i class="fa-solid fa-phone text-primary mr-3 text-xl"></i></span> <span><a href="tel:+2348086892620">+234 8086892620</a></span>
+                    </div>
+                    <div class="flex flex-row">
+                        <span class=""><i class="fa-solid fa-envelope text-primary mr-3 text-xl"></i></span> <span><a href="mailto:">info@wellnesshospital.com</a></span>
+                    </div>
+                    <div class="flex flex-row">
+                        <span class=""><i class="fa-solid fa-clock text-primary mr-3 text-xl"></i></span> <span>Mon - Fri: 8:00AM - 8:00 PM <br> Sat - Sun: 9:00 AM - 5:00 PM <br> Emergency: 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center text-slate-500 text-sm">© <span id="year"></span> Wellness Hospitals & Diagnostics Limited. All rights reserved.</div>
+        <div class="mt-1 text-center text-slate-500 text-sm">Designed by <a href="" class="text-emerald-200">Webemmy development company</a></div>
+    </footer>
+
+  <!-- Scripts -->
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileToggle && mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Book buttons open scroll to booking
+    document.querySelectorAll('#ctaBook, #mobileBook, a[href="#booking"]').forEach(el => {
+      el && el.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Booking form submit (demo)
+    const bookingForm = document.getElementById('bookingForm');
+    const bookingMessage = document.getElementById('bookingMessage');
+    bookingForm && bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(bookingForm);
+      // Simple demo validation
+      if (!data.get('name') || !data.get('phone') || !data.get('service')) {
+        bookingMessage.className = 'mt-4 p-4 rounded-lg bg-red-100 text-red-700';
+        bookingMessage.textContent = 'Please fill in your name, phone and select a service.';
+        bookingMessage.classList.remove('hidden');
+        return;
+      }
+      bookingMessage.className = 'mt-4 p-4 rounded-lg bg-tealg/10 text-tealg';
+      bookingMessage.textContent = 'Thank you! Your appointment request has been received. We will contact you to confirm.';
+      bookingMessage.classList.remove('hidden');
+      bookingForm.reset();
+    });
+
+    // Contact form demo
+    const contactForm = document.getElementById('contactForm');
+    const contactMessage = document.getElementById('contactMessage');
+    contactForm && contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData(contactForm);
+      if (!fd.get('name') || !fd.get('email') || !fd.get('message')) {
+        contactMessage.className = 'mt-4 p-3 rounded-lg bg-red-100 text-red-700';
+        contactMessage.textContent = 'Please fill out all fields.';
+        contactMessage.classList.remove('hidden');
+        return;
+      }
+      contactMessage.className = 'mt-4 p-3 rounded-lg bg-tealg/10 text-tealg';
+      contactMessage.textContent = 'Thanks! Your message has been sent. We will reply within 24 hours.';
+      contactMessage.classList.remove('hidden');
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>

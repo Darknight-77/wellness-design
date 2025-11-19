@@ -27,7 +27,7 @@
     <!-- Header / Nav -->
     <header class="bg-white shadow-sm sticky top-0 z-40">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3">
+            <a href="/" class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white font-extrabold">W</div>
                 <div>
                     <div class="text-lg font-extrabold">Wellness Hospitals</div>
@@ -36,28 +36,30 @@
             </a>
 
             <nav class="hidden md:flex items-center gap-6">
-            <a href="#services" class="hover:text-primary">Services</a>
-            <a href="#about" class="hover:text-primary">About</a>
-            <a href="#booking" class="hover:text-primary">Booking</a>
-            <a href="#contact" class="hover:text-primary">Contact</a>
-            <button id="ctaBook" class="ml-4 bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Book Appointment</button>
+                <a href="/" class="hover:text-primary font-semibold">Home</a>
+                <a href="/services.html" class="text-primary font-semibold">Services</a>
+                <a href="/about.html" class="hover:text-primary font-semibold">About</a>
+                <a href="/booking.html" class="hover:text-primary font-semibold">Booking</a>
+                <a href="/contact.html" class="hover:text-primary font-semibold">Contact</a>
+                <button id="ctaBook" class="ml-4 bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Book Appointment</button>
             </nav>
 
             <div class="md:hidden">
                 <button id="mobileToggle" class="p-2 rounded-md border">
-                    <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 </button>
             </div>
         </div>
 
         <!-- Mobile menu -->
         <div id="mobileMenu" class="hidden md:hidden border-t">
-            <div class="px-4 py-4 flex flex-col gap-3">
-                <a href="#services" class="block">Services</a>
-                <a href="#about" class="block">About</a>
-                <a href="#booking" class="block">Booking</a>
-                <a href="#contact" class="block">Contact</a>
-                <button id="mobileBook" class="mt-2 bg-primary text-white px-4 py-2 rounded-lg">Book Appointment</button>
+            <div class="px-4 py-4 flex flex-col gap-3">                
+                <a href="/" class="block">Home</a>
+                <a href="/services.html" class="block text-primary">Services</a>
+                <a href="/about.html" class="block">About</a>
+                <a href="/booking.html" class="block">Booking</a>
+                <a href="/contact.html" class="block">Contact</a>
+                <a href="/booking.html#booking" id="mobileBook#booking" class="mt-2 bg-primary text-white px-4 py-2 rounded-lg">Book Appointment</a>
             </div>
         </div>
     </header>
@@ -66,10 +68,10 @@
         <!-- Hero -->
         <section class="pt-24 pb-12 bg-gradient-to-br from-primary to-emerald-100">
             <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-700 text-shadow-2xs text-shadow-gray-100 mb-6">
+                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-700 text-shadow-2xs text-shadow-gray-100 mb-6 text-shadow-man">
                     Our Services
                 </h1>
-                <p class="text-lg text-slate-700 max-w-2xl mx-auto mb-8">
+                <p class="text-lg text-slate-700 max-w-2xl mx-auto mb-8 text-shadow-man delius-regular">
                     List of services we offer at Wellness Hospital & Diagnostics
                 </p>
             </div>

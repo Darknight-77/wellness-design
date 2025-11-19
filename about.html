@@ -22,12 +22,15 @@
       }
     }
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Delius&display=swap" rel="stylesheet">
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased leading-relaxed">
     <!-- Header / Nav -->
     <header class="bg-white shadow-sm sticky top-0 z-40">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3">
+            <a href="/" class="flex items-center gap-3">
                 <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white font-extrabold">W</div>
                 <div>
                     <div class="text-lg font-extrabold">Wellness Hospitals</div>
@@ -36,28 +39,30 @@
             </a>
 
             <nav class="hidden md:flex items-center gap-6">
-            <a href="#services" class="hover:text-primary">Services</a>
-            <a href="#about" class="hover:text-primary">About</a>
-            <a href="#booking" class="hover:text-primary">Booking</a>
-            <a href="#contact" class="hover:text-primary">Contact</a>
-            <button id="ctaBook" class="ml-4 bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Book Appointment</button>
+                <a href="/" class="hover:text-primary font-semibold">Home</a>
+                <a href="/services.html" class="hover:text-primary font-semibold">Services</a>
+                <a href="/about.html" class="text-primary font-semibold">About</a>
+                <a href="/booking.html" class="hover:text-primary font-semibold">Booking</a>
+                <a href="/contact.html" class="hover:text-primary font-semibold">Contact</a>
+                <button id="ctaBook" class="ml-4 bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-lg">Book Appointment</button>
             </nav>
 
             <div class="md:hidden">
                 <button id="mobileToggle" class="p-2 rounded-md border">
-                    <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 </button>
             </div>
         </div>
 
         <!-- Mobile menu -->
         <div id="mobileMenu" class="hidden md:hidden border-t">
-            <div class="px-4 py-4 flex flex-col gap-3">
-                <a href="#services" class="block">Services</a>
-                <a href="#about" class="block">About</a>
-                <a href="#booking" class="block">Booking</a>
-                <a href="#contact" class="block">Contact</a>
-                <button id="mobileBook" class="mt-2 bg-primary text-white px-4 py-2 rounded-lg">Book Appointment</button>
+            <div class="px-4 py-4 flex flex-col gap-3">                
+                <a href="/" class="block">Home</a>
+                <a href="/services.html" class="block">Services</a>
+                <a href="/about.html" class="block text-primary">About</a>
+                <a href="/booking.html" class="block">Booking</a>
+                <a href="/contact.html" class="block">Contact</a>
+                <a href="/booking.html#booking" id="mobileBook#booking" class="mt-2 bg-primary text-white px-4 py-2 rounded-lg">Book Appointment</a>
             </div>
         </div>
     </header>
@@ -66,19 +71,150 @@
         <!-- Hero -->
         <section class="pt-24 pb-12 bg-gradient-to-br from-primary to-emerald-100">
             <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-700 text-shadow-2xs text-shadow-gray-100 mb-6">
-                    Our Services
+                <h1 class="text-5xl lg:text-5xl font-extrabold text-gray-50 text-shadow-2xs text-shadow-gray-100 mb-6 text-shadow-man">
+                    About Wellness Hospitals & Diagnostics
                 </h1>
-                <p class="text-lg text-slate-700 max-w-2xl mx-auto mb-8">
-                    List of services we offer at Wellness Hospital & Diagnostics
+                <p class="text-2xl text-gray-50 max-w-2xl mx-auto mb-8 text-shadow-man delius-regular">
+                    What we do and how we are committed to providing quality healthcare services to our community.
                 </p>
             </div>
         </section>
-        <!-- Services Page -->
-        
 
+        <!-- About Us Page -->
+        <section class="">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 py-16 px-6 gap-12 lg:gap-10 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-5">Our Story</h2>
+                    <p class="mt-4 mb-4 text-gray-600 text-lg text-pretty tracking-wide leading-2">Wellness Hospitals & Diagnostics Limited was established with the vision of providing accessible, affordable, and high-quality healthcare services to our community. Since our inception, we have been dedicated to delivering comprehensive medical care through a team of experienced clinicians and state-of-the-art diagnostic facilities.</p>
+                    <p class="mb-4 text-gray-600 text-lg text-pretty tracking-wide leading-2">Our hospital offers a wide range of services including family health, pediatrics, obstetrics and gynecology, surgery, trauma care, and advanced diagnostic services such as laboratory tests, imaging, and ECG. We believe in a patient-centered approach, ensuring that every individual receives personalized care tailored to their unique needs.</p>
+                    <p class="mb-4 text-gray-600 text-lg text-pretty tracking-wide leading-2">At Wellness Hospitals, we are committed to fostering a compassionate and supportive environment for our patients. Our team of healthcare professionals works collaboratively to ensure the best outcomes for our patients, prioritizing their well-being and comfort at every step of their healthcare journey.</p>
+                </div>
+                <div class="relative overflow-hidden rounded-xl shadow-sm h-80">
+    
+                    <!-- Slides -->
+                    <div id="imageSlider" class="relative w-full h-64">
+                        <img src="images/wellness-customer.png" class="slide absolute inset-0 object-cover opacity-100 transition-opacity duration-700" />
+                        <img src="images/staffTalk.avif" class="slide absolute inset-0 object-cover opacity-0 transition-opacity duration-700" />
+                        <img src="images/staffSmiling.avif" class="slide absolute inset-0 object-cover opacity-0 transition-opacity duration-700" />
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <button id="prevSlide" class="absolute top-1/2 left-3 -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-2 rounded-full shadow-md">
+                    ‹
+                    </button>
+                    <button id="nextSlide" class="absolute top-1/2 right-3 -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-2 rounded-full shadow-md">
+                    ›
+                    </button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="bg-white">
+            <div class="container mx-auto py-16 px-4">
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <div class="bg-slate-50/60 p-4 rounded-xl border border-red-200 text-center backdrop-blur-40 hover:shadow-lg shadow-sm">
+                        <h3 class="font-semibold text-2xl text-red-800/80 mb-2">Our Mission</h3>
+                        <p class="text-lg tracking-tight leading-14 text-slate-600">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti expedita error dolore, autem qui nulla, dolorum ipsum veniam sapiente, sit nobis vero. Ad, modi nostrum deleniti ex commodi alias. Placeat.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50/60 p-4 rounded-xl border border-red-200 text-center backdrop-blur-40 hover:shadow-lg shadow-sm">
+                        <h3 class="font-semibold text-2xl text-red-800/80 mb-2">Our Vision</h3>
+                        <p class="text-lg tracking-tight leading-14 text-slate-600">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti expedita error dolore, autem qui nulla, dolorum ipsum veniam sapiente, sit nobis vero. Ad, modi nostrum deleniti ex commodi alias. Placeat.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50/60 p-4 rounded-xl border border-red-200 text-center backdrop-blur-40 hover:shadow-lg shadow-sm">
+                        <h3 class="font-semibold text-2xl text-red-800/80 mb-2">Our Values</h3>
+                        <p class="text-lg tracking-tight leading-14 text-slate-600">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti expedita error dolore, autem qui nulla, dolorum ipsum veniam sapiente, sit nobis vero. Ad, modi nostrum deleniti ex commodi alias. Placeat.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="container mx-auto py-16 px-4 ">
+            <h2 class="text-4xl font-bold mb-8 text-center">Meet Our Team</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-2 border-emerald-400/30 hover:shadow-lg transition duration-200">
+                    <img src="images/doc2.jpg" alt="Dr. Jane Smith" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Dr. Jane Smith</h3>
+                    <p class="text-gray-600 mb-4">Chief Medical Officer</p>
+                    <p class="text-gray-500 text-sm">With over 15 years of experience in family medicine, Dr. Smith leads our clinical team with a focus on patient-centered care.</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-2 border-emerald-400/30 hover:shadow-lg transition duration-200">
+                    <img src="images/doc1.jpg" alt="Dr. John Doe" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Dr. John Doe</h3>
+                    <p class="text-gray-600 mb-4">Head of Pediatrics</p>
+                    <p class="text-gray-500 text-sm">Dr. Doe specializes in pediatric care, ensuring the health and well-being of our youngest patients.</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-2 border-emerald-400/30 hover:shadow-lg transition duration-200">
+                    <img src="images/doc3.jpg" alt="Dr. Emily Johnson" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Dr. Emily Johnson</h3>
+                    <p class="text-gray-600 mb-4">Obstetrics & Gynecology Specialist</p>
+                    <p class="text-gray-500 text-sm">Dr. Johnson provides expert care in women's health, focusing on obstetrics and gynecology services.</p>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center border-2 border-emerald-400/30 hover:shadow-lg transition duration-200">
+                    <img src="images/doc4.avif" alt="Dr. Michael Lee" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Dr. Michael Lee</h3>
+                    <p class="text-gray-600 mb-4">Surgery & Trauma Specialist</p>
+                    <p class="text-gray-500 text-sm">With extensive experience in surgery and trauma care, Dr. Lee is dedicated to providing top-notch surgical services.</p>
+                </div>
+            </div>
+            <div class="mt-5">
+                <h2 class="text-2xl text-center font-semibold mt-4">Some Of Our Nurses</h2>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
+                    <div class="flex flex-row gap-2 bg-amber-100/15 border border-amber-200 p-4 rounded-xl shadow-md">
+                        <img src="images/empty.png" alt="Nurses at Wellness Hospitals" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-medium text-lg">Mrs Ann John</p>
+                            <span class="text-gray-600 -mt-1">Senior Nurse</span>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-row gap-2 bg-amber-100/15 border border-amber-200 p-4 rounded-xl shadow-md">
+                        <img src="images/empty.png" alt="Nurses at Wellness Hospitals" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-medium text-lg">Miss Jane Mira</p>
+                            <span class="text-gray-600 -mt-1">Asst. Snr Nurse</span>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-row gap-2 bg-amber-100/15 border border-amber-200 p-4 rounded-xl shadow-md">
+                        <img src="images/empty.png" alt="Nurses at Wellness Hospitals" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-medium text-lg">Amanda Winner</p>
+                            <span class="text-gray-600 -mt-1">Auxiliary</span>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-row gap-2 bg-amber-100/15 border border-amber-200 p-4 rounded-xl shadow-md">
+                        <img src="images/empty.png" alt="Nurses at Wellness Hospitals" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-medium text-lg">Christain John</p>
+                            <span class="text-gray-600 -mt-1">Auxiliary</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section class="bg-sky-300/10 py-12 px-16">
-            <div class="container flex flex-col lg:flex-row mx-auto border shadow-lg bg-white rounded-lg p-10">
+            <div class="container flex flex-col lg:flex-row mx-auto p-10 bg-transparent">
                 <div class="flex flex-col justify-center">
                     <h3 class="text-4xl font-semibold">Ready to Schedule an Appointment?</h3>
                     <p class="mt-2 mb-2 text-lg">Our staffs are here to attend to your needs and give you the best healthcare services.</p>
@@ -90,7 +226,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="images/wellness-customer.png" alt="Wellness Hospitals appointment" class="mt-8 lg:mt-0 lg:ml-10 rounded-2xl w-full max-w-md">
+                    <img src="images/building.jpeg" alt="Wellness Hospitals appointment" class="mt-8 lg:mt-0 lg:ml-10 rounded-2xl w-full max-w-xl">
                 </div>
 
             </div>
@@ -213,5 +349,34 @@
       contactForm.reset();
     });
   </script>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('#imageSlider .slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+            slide.style.opacity = (i === index) ? '100' : '0';
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(nextSlide, 3000);
+
+        // Button controls
+        document.getElementById('nextSlide').addEventListener('click', nextSlide);
+        document.getElementById('prevSlide').addEventListener('click', prevSlide);
+    </script>
+
 </body>
 </html>
